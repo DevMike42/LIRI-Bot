@@ -1,17 +1,38 @@
-require("dotenv").config();
+var Liri = require('./liri-intellect');
+var liriBot = new Liri();
 
-var keys = require("./keys.js");
+var term = process.argv[2];
+var search = process.argv.slice(3).join(' ');
 
-var spotify = new Spotify(keys.spotify);
+function runLiri(term, search) {
+    if(!term) {
+        term = 'spotify-this-song';
+    }
 
+    if (term === 'concert-this') {
+        console.log('Searching Band...\n\n');
+        if (!search) {
+            search = 'All time low!';
+        }
+        liriBot.searchBand(search);
 
-// Commands to take in
-// ==========================================
+    } else if (term === 'spotify-this-song') {
+        console.log('Searching Spotify...\n\n');
+        if(!search) {
+            search = 'The Sign';
+        }
+        liriBot.searchSpotify(search);
 
-// concert-this
+    } else if (term === 'movie-this') {
+        console.log('Searching Movie...\n\n');
+        if (!search) {
+            search = 'Mr. Nobody';
+        }
+        liriBot.searchMovie(search);
 
-// spotify-this-song
+    } else if (term === 'do-what-it-says') {
+        liriBot.searchLiri(runLiri);
+    }
+}
 
-// movie-this
-
-// do-what-it-says
+runLiri(term, search);
