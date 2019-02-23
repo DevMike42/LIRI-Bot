@@ -51,7 +51,7 @@ function Liri() {
 
                 console.log('Artist(s): ' + track.artists[0].name);
                 console.log('Track: ' + track.name);
-                console.log('Spotify song link: ' + track.externam_urls.spotify);
+                console.log('Spotify song link: ' + track.externam_urls);
                 console.log('Album: ' + track.album.name);
                 console.log(divider);
             }

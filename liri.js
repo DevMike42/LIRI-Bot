@@ -10,7 +10,7 @@ function runLiri(term, search) {
     }
 
     if (term === 'concert-this') {
-        console.log('Searching Band...\n\n');
+        console.log('Searching Band...\n\n');``
         if (!search) {
             search = 'All time low!';
         }
