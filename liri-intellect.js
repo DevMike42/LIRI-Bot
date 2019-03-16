@@ -9,12 +9,11 @@ function Liri() {
 
     var divider = '\n----------------------------------------------\n\n';
 
-    this.searchBand = function (search) {
-        axios.get('https://restbandsintown.com/artists/' + search + '/events', {
-            params: {
-                app_id: keys.code.band_key
-            }
-        })
+    this.searchBand = function (artist) {
+
+        var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
+
+        axios.get(queryURL)
         .then(function (response) {
             var data = response.data;
 
@@ -59,13 +58,14 @@ function Liri() {
         });
     };
 
-    this.searchMovie = function (search) {
-        axios.get('http://www.omdbapi.com/', {
-            params: {
-                apikey: keys.code.omdb_key,
-                t: search
-            }
-        })
+    this.searchMovie = function (movieName) {
+        if (movieName === undefined) {
+            console.log("Mr. Nobody")
+        }
+
+        var urlHit = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=full&tomatoes=true&apikey=trilogy";
+
+        axios.get(urlHit)
         .then(function (response) {
             var data = response.data;
 
