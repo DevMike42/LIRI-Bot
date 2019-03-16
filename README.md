@@ -6,7 +6,7 @@ This is a command line node app similar to SIRI. It will take in parameters and 
 Command option 1
 concert-this + `Artist/Band Name` will search the Bands in Town Artist Events API and return data related to the desired artist or Band. Example below
 
-*** Not currently functioning. Waiting for API Key ***
+![Example1_gif](https://i.imgur.com/E6InCAJ.gif)
 
 Command option 2
 spotify-this-song + `song name` will search the Spotify API and return data related to the desired song. Example below
@@ -17,7 +17,7 @@ spotify-this-song + `song name` will search the Spotify API and return data rela
 Command option 3
 movie-this + `movie name` will search the OMDB API and return data related to the desired movie. Example below
 
-*** Not currently functioning. Waiting for API Key ***
+![Example3_gif](https://i.imgur.com/8GsLHl7.gif)
 
 
 Command option 4
