@@ -6,7 +6,7 @@ Similar to SIRI, LIRI is a Language Interpretation and Recognition Interface usi
 
 ## Usage
 
-- Fist start by cloning the repo into a director of your choice
+- Fist start by cloning the repo locally into a directory of your choice
 - Run `npm install` in the command line to install all required dependencies
 - Run 1 of the 4 commands listed below for each function of the application
 
