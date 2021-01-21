@@ -18,14 +18,19 @@
   },
   "homepage": "https://github.com/sweetmike/liri-node-app#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bandsintown": "^1.0.1",
-    "dotenv": "^8.0.0",
+    "dotenv": "^8.2.0",
     "i": "^0.3.6",
+<<<<<<< HEAD
+    "inquirer": "^6.5.2",
+    "lodash": "^4.17.20",
+=======
     "inquirer": "^6.5.0",
     "lodash": "^4.17.19",
+>>>>>>> aaea03b3092dafd9bb04b98ba42878a75c497688
     "lodash.template": "^4.5.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.1",
     "node-spotify-api": "^1.1.1"
   }
 }
